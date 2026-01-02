@@ -18,13 +18,7 @@ export default function Sidebar({
   onSelect: (item: string) => void;
 }) {
   return (
-    <div
-      className="
-        w-[260px] p-3
-        bg-panel dark:bg-panelDark
-        transition-colors
-      "
-    >
+    <div className="hidden md:block w-[260px] bg-panel dark:bg-panelDark p-3">
       {/* Section label */}
       <p
         className="

@@ -49,7 +49,7 @@ Frontend:
 Tools & Workflow:
 • Git, GitHub
 • Modern build tools (Vite, Webpack basics)
-• API integration (REST)
+• API integration
 
 Concepts:
 • Responsive design

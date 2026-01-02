@@ -11,9 +11,14 @@ export default function Note({
     <motion.div
       key={title}
       className="
-  p-10 pb-24 max-w-[720px]
-  min-h-full
-  "
+  p-6 md:p-10
+  pb-24
+  w-full min-w-0
+  md:max-w-[720px]
+  md:mx-auto
+  min-h-0
+  break-words
+"
       initial={{ opacity: 0, y: 6 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.18, ease: "easeOut" }}

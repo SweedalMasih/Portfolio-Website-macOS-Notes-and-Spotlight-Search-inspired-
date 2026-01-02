@@ -17,14 +17,17 @@ export default function Window({ children }: { children: React.ReactNode }) {
   return (
     <div
       className="
-    w-[1200px] h-[620px]
-    rounded-2xl
+    w-full
+    h-screen md:h-[620px]
+    max-w-[1200px]
+    mx-auto
     bg-app dark:bg-appDark
     shadow-[0_30px_80px_rgba(0,0,0,0.18)]
     border border-border dark:border-transparent
     overflow-hidden
     flex flex-col
-      "
+    rounded-2xl
+  "
     >
       {/* Top Bar */}
       <div className="h-12 flex-shrink-0 flex items-center px-4 gap-2">

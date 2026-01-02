@@ -8,13 +8,13 @@ A **desktop-app–style personal portfolio** inspired by **macOS Notes** and **S
 
 ## ✨ Features
 
-- 🗂 **Notes-style navigation** with sidebar  
-- ⌘ **Spotlight Search (⌘K / Ctrl+K)** for quick navigation  
-- 🌙 **Dark mode by default** with manual toggle  
-- ⌨️ **Keyboard-first interactions**  
-- 🎞 **Subtle animations** using Framer Motion  
-- 📱 **Responsive design** (desktop-first, mobile-adapted)  
-- 📄 **Embedded resume viewer + download**  
+- 🗂 **Notes-style navigation** with sidebar
+- ⌘ **Spotlight Search (⌘K / Ctrl+K)** for quick navigation
+- 🌙 **Dark mode by default** with manual toggle
+- ⌨️ **Keyboard-first interactions**
+- 🎞 **Subtle animations** using Framer Motion
+- 📱 **Responsive design** (desktop-first, mobile-adapted)
+- 📄 **Embedded resume viewer + download**
 - 🧹 **Prettier enforced via pre-commit hook**
 
 ---
@@ -23,10 +23,10 @@ A **desktop-app–style personal portfolio** inspired by **macOS Notes** and **S
 
 This project was built as a **learning and exploration exercise**, focusing on:
 
-- Translating desktop UI patterns to the web  
-- Designing calm, distraction-free interfaces  
-- Managing layout, scrolling, and theming correctly  
-- Writing clean, readable, and maintainable React code  
+- Translating desktop UI patterns to the web
+- Designing calm, distraction-free interfaces
+- Managing layout, scrolling, and theming correctly
+- Writing clean, readable, and maintainable React code
 
 ---
 

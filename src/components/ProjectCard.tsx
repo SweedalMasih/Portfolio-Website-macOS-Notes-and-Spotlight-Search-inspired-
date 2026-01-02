@@ -21,10 +21,12 @@ export default function ProjectCard({
   return (
     <div
       className="
-        rounded-xl p-5
-        bg-panel dark:bg-panelDark
-        shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.6)]
-        transition-colors
+    w-full min-w-0
+    rounded-xl p-5
+    bg-panel dark:bg-panelDark
+    shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.6)]
+    transition-colors
+    overflow-hidden
       "
     >
       {viewing && (
@@ -38,11 +40,11 @@ export default function ProjectCard({
         </span>
       )}
 
-      <h3 className="text-base font-semibold text-text dark:text-textDark mb-1">
+      <h3 className="text-base font-semibold text-text dark:text-textDark mb-1 break-words">
         {title}
       </h3>
 
-      <p className="text-sm text-textMuted dark:text-textMutedDark mb-3">
+      <p className="text-sm text-textMuted dark:text-textMutedDark mb-3 break-words break-all">
         {description}
       </p>
 
@@ -52,9 +54,11 @@ export default function ProjectCard({
           <span
             key={item}
             className="
-              text-xs px-2 py-1 rounded-md
-              bg-panelMuted dark:bg-panelMutedDark
-              text-textMuted dark:text-textMutedDark
+    text-xs px-2 py-1 rounded-md
+    bg-panelMuted dark:bg-panelMutedDark
+    text-textMuted dark:text-textMutedDark
+    break-all
+    max-w-full
             "
           >
             {item}
