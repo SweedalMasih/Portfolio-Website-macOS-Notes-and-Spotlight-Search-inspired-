@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# 🗒️ macOS Notes–Inspired Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **desktop-app–style personal portfolio** inspired by **macOS Notes** and **Spotlight Search**, built to explore clean UI, keyboard-first UX, and modern frontend architecture.
 
-Currently, two official plugins are available:
+> This portfolio is intentionally designed to feel like a native app — not a traditional website.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🗂 **Notes-style navigation** with sidebar  
+- ⌘ **Spotlight Search (⌘K / Ctrl+K)** for quick navigation  
+- 🌙 **Dark mode by default** with manual toggle  
+- ⌨️ **Keyboard-first interactions**  
+- 🎞 **Subtle animations** using Framer Motion  
+- 📱 **Responsive design** (desktop-first, mobile-adapted)  
+- 📄 **Embedded resume viewer + download**  
+- 🧹 **Prettier enforced via pre-commit hook**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 Built As a Learning Project
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+This project was built as a **learning and exploration exercise**, focusing on:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Translating desktop UI patterns to the web  
+- Designing calm, distraction-free interfaces  
+- Managing layout, scrolling, and theming correctly  
+- Writing clean, readable, and maintainable React code  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Tech Stack
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+- **React + TypeScript**
+- **Vite** (fast dev & build)
+- **Tailwind CSS** (design tokens + theming)
+- **Framer Motion** (micro-interactions)
+- **cmdk** (Spotlight-style command palette)
+- **Husky + lint-staged + Prettier** (code quality)
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+---
