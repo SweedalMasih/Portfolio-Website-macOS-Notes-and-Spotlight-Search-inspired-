@@ -38,5 +38,3 @@ This project was built as a **learning and exploration exercise**, focusing on:
 - **Framer Motion** (micro-interactions)
 - **cmdk** (Spotlight-style command palette)
 - **Husky + lint-staged + Prettier** (code quality)
-
----

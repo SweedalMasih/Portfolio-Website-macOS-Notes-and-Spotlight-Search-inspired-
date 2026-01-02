@@ -6,6 +6,7 @@ import Window from "../components/Window";
 import ResumeViewer from "../components/ResumeViewer";
 import ProjectCard from "../components/ProjectCard";
 import MobileNav from "../components/MobileNav";
+import MobileExperiencePrompt from "../components/MobileExperiencePrompt";
 import { notes } from "../data/notes";
 import { projects } from "../data/projects";
 
@@ -55,6 +56,7 @@ export default function Home() {
 
   return (
     <>
+      <MobileExperiencePrompt />
       {/* Spotlight */}
       <Spotlight
         open={spotlightOpen}
