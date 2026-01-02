@@ -18,7 +18,7 @@ export default function Window({ children }: { children: React.ReactNode }) {
     <div
       className="
     w-full
-    h-[780px] md:h-[620px]
+    h-[720px] md:h-[620px]
     max-w-[1200px]
     mx-auto
     bg-app dark:bg-appDark
