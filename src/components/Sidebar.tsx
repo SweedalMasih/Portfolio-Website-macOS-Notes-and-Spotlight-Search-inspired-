@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { User, Briefcase, Folder, Wrench, FileText, Mail } from "lucide-react";
+import type { NoteKey } from "../data/notes";
 
 const items = [
   { label: "About Me", icon: User },
@@ -15,7 +16,7 @@ export default function Sidebar({
   onSelect,
 }: {
   active: string;
-  onSelect: (item: string) => void;
+  onSelect: (item: NoteKey) => void;
 }) {
   return (
     <div className="hidden md:block w-[260px] bg-panel dark:bg-panelDark p-3">
@@ -35,7 +36,7 @@ export default function Sidebar({
         return (
           <button
             key={label}
-            onClick={() => onSelect(label)}
+            onClick={() => onSelect(label as NoteKey)}
             className="
               relative w-full text-left px-3 py-2.5 rounded-lg mb-1
               transition-colors

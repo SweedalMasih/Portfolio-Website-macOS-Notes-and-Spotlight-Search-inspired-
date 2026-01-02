@@ -1,3 +1,5 @@
+export type NoteKey = keyof typeof notes;
+
 export const notes = {
   "About Me": {
     title: "About Me",

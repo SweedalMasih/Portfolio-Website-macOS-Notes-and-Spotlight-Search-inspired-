@@ -1,3 +1,5 @@
+import type { NoteKey } from "../data/notes";
+
 const items = [
   "About Me",
   "Experience",
@@ -12,7 +14,7 @@ export default function MobileNav({
   onSelect,
 }: {
   active: string;
-  onSelect: (item: string) => void;
+  onSelect: (item: NoteKey) => void;
 }) {
   return (
     <div
@@ -28,7 +30,7 @@ export default function MobileNav({
       {items.map((item) => (
         <button
           key={item}
-          onClick={() => onSelect(item)}
+          onClick={() => onSelect(item as NoteKey)}
           className={`
             whitespace-nowrap px-3 py-1.5 rounded-full text-sm
             transition
