@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth theme transitions */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Base typography only */
+body {
+  font-family: Inter, system-ui, sans-serif;
+  @apply antialiased;
+}
+
+/* Text selection — DO NOT use @apply here */
+::selection {
+  background: #e8ecff; /* accentSoft (light) */
+}
+
+.dark ::selection {
+  background: #1f3a5f; /* accentSoftDark */
+}
