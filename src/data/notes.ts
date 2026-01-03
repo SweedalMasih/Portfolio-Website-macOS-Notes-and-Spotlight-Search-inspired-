@@ -43,21 +43,42 @@ More detailed role and company information is available in my resume.
   Skills: {
     title: "Skills",
     content: `
-Frontend:
-• React, JavaScript (ES6+), TypeScript
+Frontend Engineering:
+• React.js, Next.js, JavaScript (ES6+), TypeScript
 • HTML5, CSS3, Tailwind CSS
-• State management and component architecture
+• Component-driven architecture and reusable UI systems
+• Client-side and server-side rendering (SSR), hydration handling
+
+Performance & Reliability:
+• Performance optimization (render optimization, memoization, code-splitting)
+• Debugging complex UI issues (async flows, race conditions, state inconsistencies)
+• Production issue handling and root cause analysis
+
+APIs & Integrations:
+• REST API integration and API-driven UI development
+• Third-party integrations (analytics, payments, SDKs)
+• Error handling, loading states, and edge cases
+
+Analytics & Observability:
+• Mixpanel, Google Analytics, Google Tag Manager
+• Microsoft Clarity, Percept
+• Event tracking and user behaviour analysis
+
+Testing & Quality:
+• Automation testing for critical user flows
+• Regression prevention and release confidence
+• Clean, maintainable, and readable code practices
 
 Tools & Workflow:
 • Git, GitHub
-• Modern build tools (Vite, Webpack basics)
-• API integration
+• Build tools: Vite, Webpack
+• Agile development and cross-functional collaboration
 
-Concepts:
-• Responsive design
-• Performance optimization
-• Clean code & reusability
-• Accessibility basics
+Core Concepts:
+• Responsive and mobile-first design
+• Accessibility fundamentals (semantic HTML, keyboard navigation)
+• Scalable frontend architecture
+• Code reusability and long-term maintainability
 
 I focus on fundamentals — frameworks change, principles don’t.
 `,
